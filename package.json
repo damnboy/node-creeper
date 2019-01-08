@@ -1,0 +1,22 @@
+{
+  "main": "lib/binding.js",
+  "dependencies": {
+    "inquirer": "^6.2.1",
+    "node-addon-api": "^1.1.0",
+    "prettyjson": "^1.2.1"
+  },
+  "scripts": {
+    "build": "cd ./src/libpcap && ./configure && make",
+    "test": "node --napi-modules ./test/test_binding.js"
+  },
+  "gypfile": true,
+  "name": "node-creeper",
+  "version": "1.0.0",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "syn port scanner"
+}
